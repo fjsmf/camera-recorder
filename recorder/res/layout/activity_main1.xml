@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/start_record_screen"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美白效果"/>
+
+    <Button
+        android:id="@+id/start_record_screen1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/start_record_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预览1"/>
+
+    <Button
+        android:id="@+id/start_record_screen2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/start_record_screen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grafica"/>
+</RelativeLayout>

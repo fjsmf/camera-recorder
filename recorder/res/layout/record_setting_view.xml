@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2014 Google Inc. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:paddingBottom="25dp"
+    android:paddingLeft="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录制工具"
+        android:layout_marginTop="25dp"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    <ImageView
+        android:id="@+id/record_setting_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/places_ic_clear"/>
+    <View
+        android:id="@+id/record_setting_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/record_setting_close"
+        android:layout_marginTop="12dp"
+        android:background="#e2e2e2"/>
+    <!--摄像头-->
+    <RelativeLayout
+        android:id="@+id/record_camera_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/record_setting_line">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/durec_camera"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="摄像头"
+            android:textColor="#222222"
+            android:layout_marginLeft="50dp"/>
+        <Switch
+            android:id="@+id/record_camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:thumb="@drawable/record_setting_switcher_selector"
+            android:track="@drawable/record_setting_switcher_track_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!--显示点击操作-->
+    <RelativeLayout
+        android:id="@+id/record_show_touch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/record_camera_switch_layout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/durec_setting_item_show_touch"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="显示点击操作"
+            android:textColor="#222222"
+            android:layout_marginLeft="50dp"/>
+        <Switch
+            android:id="@+id/record_show_touch_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:thumb="@drawable/record_setting_switcher_selector"
+            android:track="@drawable/record_setting_switcher_track_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

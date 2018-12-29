@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="虎牙视频" />
+
+    </LinearLayout>
+
+   <ImageView
+        android:layout_width="0.5dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:background="#363C3F41" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+        <!--开始录制-->
+        <ImageView
+            android:id="@+id/nf_record_start"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_rec_start_normal" />
+        <!--暂停录制-->
+        <ImageView
+            android:id="@+id/nf_record_pause"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_rec_pause_normal" />
+
+        <!--继续录制-->
+        <ImageView
+            android:id="@+id/nf_record_resume"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_rec_continue_normal" />
+
+        <!--停止录制-->
+        <ImageView
+            android:id="@+id/nf_record_stop"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_rec_stop_normal" />
+
+        <ImageView
+            android:id="@+id/nf_goto_app_video"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_rec_videos_1" />
+
+        <ImageView
+            android:id="@+id/nf_record_setting"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_tools_normal" />
+
+        <ImageView
+            android:id="@+id/nf_screen_capture"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_float_screenshot_normal" />
+
+        <ImageView
+            android:id="@+id/nf_close"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_intro_outro_element_close" />
+    </LinearLayout>
+</LinearLayout>
